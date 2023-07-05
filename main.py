@@ -18,9 +18,6 @@ logging.basicConfig(
 
 try:
     model = SimpleLinearRegression()
-    with open('model.pkl', 'rb') as file:
-        model = pickle.load(file)
-
     app = Flask(__name__)
 except Exception as e:
     logging.error(f'Exception: {e}')
@@ -30,6 +27,9 @@ def inferenceStream():
     try:
         # Retrieve the input data from the request
         input_data = request.json['data']
+        with open('model.pkl', 'rb') as file:
+            model = pickle.load(file)
+        logging.info('loading model successfully for stream inference')
         predicted = model.predict(input_data)
         response = {'result': predicted[0][0]}
         return jsonify(response)
@@ -41,6 +41,9 @@ def inferenceBatch():
     try:
         # Retrieve the input data from the request
         input_data = request.json['data']
+        with open('model.pkl', 'rb') as file:
+            model = pickle.load(file)
+        logging.info('loading model successfully for batch inference')
         predicted = model.predict(input_data)
         response = {'result': predicted.tolist()}
         return jsonify(response)
@@ -53,6 +56,9 @@ def train():
     try:
         # Retrieve the input data from the request
         input_data = request.json['data']
+        with open('model.pkl', 'rb') as file:
+            model = pickle.load(file)
+        logging.info('loading existing model successfully')
         model.fit(np.array(input_data['X_train']), np.array(input_data['y_train']))
         predicted = model.predict(np.array(input_data['X_test']))
         r2_new = r2_score(np.array(input_data['y_test']), predicted)
@@ -84,7 +90,7 @@ def log():
     return jsonify(response)
 
 if __name__ == '__main__':
-    
+
     while True:
         try:
             app.run(debug=True)

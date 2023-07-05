@@ -1,3 +1,4 @@
 sol_*.py
 __pycache__
 test.py
+app.log
