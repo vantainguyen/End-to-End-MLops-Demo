@@ -57,6 +57,7 @@ def train():
     try:
         # Retrieve the input data from the request
         input_data = request.json['data']
+        model = SimpleLinearRegression(input_data['hyperparameters'][0], input_data['hyperparameters'][1])
         model = load_model(model_path)
         logging.info('loading existing model successfully')
         model.fit(np.array(input_data['X_train']), np.array(input_data['y_train']))
