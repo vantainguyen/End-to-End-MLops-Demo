@@ -31,9 +31,9 @@ if __name__ == "__main__":
         if r2_new > r2_best:
             # save model
             save_model(model_path, model)
-            logging.info('New model is better. It has been saved')
+            logging.info(f'New model was better. It was saved. Old r2: {r2_best:.4f}; new r2: {r2_new:.4f}')
             write_metrics(metrics_path, r2_new)
         else:
-            logging.info(f'New model is not better. It was not saved. Old r2: {r2_best:.4f}; new r2: {r2_new:.4f}')
+            logging.info(f'New model was not better. It was not saved. Old r2: {r2_best:.4f}; new r2: {r2_new:.4f}')
     except Exception as e:
         logging.error(f'Training process failed: {e}')

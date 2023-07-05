@@ -66,7 +66,7 @@ def train():
         if r2_new > r2_best:
             # save model
             save_model(model_path, model)
-            result = 'New model is better. It has been saved'
+            result = f'New model was better. It was saved. Old r2: {r2_best:.4f}; new r2: {r2_new:.4f}'
             write_metrics(metrics_path, r2_new)
         else:
             result = f'New model is not better. It was not saved. Old r2: {r2_best:.4f}; new r2: {r2_new:.4f}'
@@ -78,12 +78,10 @@ def train():
     
 @app.route('/log')
 def log():
-    
     file = open('app.log', 'r') 
     result = file.readlines()
     file.close()
     response = {'result': result}
-
     return jsonify(response)
 
 if __name__ == '__main__':
