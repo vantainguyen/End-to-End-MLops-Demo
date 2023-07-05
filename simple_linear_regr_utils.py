@@ -42,7 +42,6 @@ def evaluate(model, X, y, y_predicted):
     # The coefficient of determination: 1 is perfect prediction
     r2 = r2_score(y, y_predicted)
     print(f"Coefficient of determination: {r2:.2f}")
-
     # Plot outputs
     plt.scatter(X, y, color="black")
     plt.plot(X, y_predicted, color="blue", linewidth=3)
