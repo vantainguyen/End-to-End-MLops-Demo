@@ -1,10 +1,10 @@
+import os
 import logging
-import pickle 
 import numpy as np
 from flask import Flask, request, jsonify
 from sklearn.metrics import r2_score
 from simple_linear_regr import SimpleLinearRegression
-
+from utils import load_model, save_model, read_metrics, write_metrics
 
 # Configure logging to save messages to a file
 logging.basicConfig(
@@ -22,13 +22,15 @@ try:
 except Exception as e:
     logging.error(f'Exception: {e}')
 
+model_path = os.path.join('artifacts', 'model.pkl')
+metrics_path = os.path.join('artifacts', 'metrics.txt')
+
 @app.route('/stream', methods=['POST'])
 def inferenceStream():
     try:
         # Retrieve the input data from the request
         input_data = request.json['data']
-        with open('model.pkl', 'rb') as file:
-            model = pickle.load(file)
+        model = load_model(model_path)
         logging.info('loading model successfully for stream inference')
         predicted = model.predict(input_data)
         response = {'result': predicted[0][0]}
@@ -41,8 +43,7 @@ def inferenceBatch():
     try:
         # Retrieve the input data from the request
         input_data = request.json['data']
-        with open('model.pkl', 'rb') as file:
-            model = pickle.load(file)
+        model = load_model(model_path)
         logging.info('loading model successfully for batch inference')
         predicted = model.predict(input_data)
         response = {'result': predicted.tolist()}
@@ -56,21 +57,17 @@ def train():
     try:
         # Retrieve the input data from the request
         input_data = request.json['data']
-        with open('model.pkl', 'rb') as file:
-            model = pickle.load(file)
+        model = load_model(model_path)
         logging.info('loading existing model successfully')
         model.fit(np.array(input_data['X_train']), np.array(input_data['y_train']))
         predicted = model.predict(np.array(input_data['X_test']))
         r2_new = r2_score(np.array(input_data['y_test']), predicted)
-        with open('metrics.txt', 'r') as file:
-            r2_best = float(file.readline())
+        r2_best = read_metrics(metrics_path)
         if r2_new > r2_best:
             # save model
-            with open('model.pkl', 'wb') as file:
-                pickle.dump(model, file)
+            save_model(model_path, model)
             result = 'New model is better. It has been saved'
-            with open('metrics.txt', 'w') as file:
-                file.write(str(r2_new))
+            write_metrics(metrics_path, r2_new)
         else:
             result = 'New model is not better. It was not saved'
         response = {'result': result}
