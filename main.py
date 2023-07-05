@@ -69,7 +69,7 @@ def train():
             result = 'New model is better. It has been saved'
             write_metrics(metrics_path, r2_new)
         else:
-            result = 'New model is not better. It was not saved'
+            result = f'New model is not better. It was not saved. Old r2: {r2_best:.4f}; new r2: {r2_new:.4f}'
         response = {'result': result}
         return jsonify(response)
     except Exception as e:
