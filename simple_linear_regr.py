@@ -1,4 +1,5 @@
 import numpy as np
+import pickle
 from simple_linear_regr_utils import generate_data, evaluate
 
 
@@ -89,7 +90,16 @@ class SimpleLinearRegression:
 
 if __name__ == "__main__":
     X_train, y_train, X_test, y_test = generate_data()
+    print(type(X_test))
+    print(X_test[0:3])
+    print(y_test[0])
     model = SimpleLinearRegression()
-    model.fit(X_train,y_train)
-    predicted = model.predict(X_test)
-    evaluate(model, X_test, y_test, predicted)
+    # model.fit(X_train,y_train)
+    # # saving model
+    # with open('model.pkl', 'wb') as file:
+    #     pickle.dump(model, file)
+    with open('model.pkl', 'rb') as file:
+        model = pickle.load(file)
+    predicted = model.predict([[0.077],[0.056]])
+    print('predicted', predicted)
+    # evaluate(model, X_test, y_test, predicted)
