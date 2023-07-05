@@ -87,9 +87,11 @@ def log():
 
 if __name__ == '__main__':
 
-    while True:
-        try:
-            app.run(debug=True)
-        except Exception as e:
-            logging.info(f'Exception: {e}')
-            pass
+    app.run('0.0.0.0', '8080', debug=True)
+
+    # while True:
+    #     try:
+    #         app.run(debug=True)
+    #     except Exception as e:
+    #         logging.info(f'Exception: {e}')
+    #         pass
