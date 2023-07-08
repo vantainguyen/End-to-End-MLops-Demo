@@ -78,3 +78,8 @@ ooo2023-07-08 18:12:38,531 - INFO - loading model successfully for stream infere
 2023-07-08 18:55:01,215 - INFO - loading model successfully for stream inference
 2023-07-08 18:55:01,236 - WARNING -  * Debugger is active!
 2023-07-08 18:55:01,252 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 19:13:03,000 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\test.py', reloading
+2023-07-08 19:13:03,193 - INFO -  * Restarting with stat
+2023-07-08 19:13:09,481 - INFO - loading model successfully for stream inference
+2023-07-08 19:13:09,512 - WARNING -  * Debugger is active!
+2023-07-08 19:13:09,529 - INFO -  * Debugger PIN: 111-192-061

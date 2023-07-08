@@ -17,6 +17,4 @@ response = requests.post('http://3.106.53.174:8080/stream', json={'data': input_
 
 # Retrieve the inference result from the response
 inference_result = response.json()['result']
-
-# Print the inference result
 print(inference_result)
