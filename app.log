@@ -53,3 +53,28 @@ ooo2023-07-08 18:12:38,531 - INFO - loading model successfully for stream infere
 2023-07-08 18:41:15,453 - INFO - loading model successfully for stream inference
 2023-07-08 18:41:15,483 - WARNING -  * Debugger is active!
 2023-07-08 18:41:15,498 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 18:51:26,335 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\test.py', reloading
+2023-07-08 18:51:26,731 - INFO -  * Restarting with stat
+2023-07-08 18:51:31,437 - INFO - loading model successfully for stream inference
+2023-07-08 18:51:31,447 - WARNING -  * Debugger is active!
+2023-07-08 18:51:31,452 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 18:51:52,159 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\test.py', reloading
+2023-07-08 18:51:52,588 - INFO -  * Restarting with stat
+2023-07-08 18:51:58,954 - INFO - loading model successfully for stream inference
+2023-07-08 18:51:58,975 - WARNING -  * Debugger is active!
+2023-07-08 18:51:58,991 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 18:52:17,336 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\test.py', reloading
+2023-07-08 18:52:17,702 - INFO -  * Restarting with stat
+2023-07-08 18:52:21,391 - INFO - loading model successfully for stream inference
+2023-07-08 18:52:21,418 - WARNING -  * Debugger is active!
+2023-07-08 18:52:21,433 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 18:54:18,998 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\test.py', reloading
+2023-07-08 18:54:19,363 - INFO -  * Restarting with stat
+2023-07-08 18:54:22,155 - INFO - loading model successfully for stream inference
+2023-07-08 18:54:22,179 - WARNING -  * Debugger is active!
+2023-07-08 18:54:22,193 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 18:54:54,687 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\main.py', reloading
+2023-07-08 18:54:55,157 - INFO -  * Restarting with stat
+2023-07-08 18:55:01,215 - INFO - loading model successfully for stream inference
+2023-07-08 18:55:01,236 - WARNING -  * Debugger is active!
+2023-07-08 18:55:01,252 - INFO -  * Debugger PIN: 111-192-061
