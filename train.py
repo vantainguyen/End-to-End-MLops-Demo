@@ -23,9 +23,15 @@ if __name__ == "__main__":
     try:
         X_train, y_train, X_test, y_test = generate_data()
         model = SimpleLinearRegression()
-        model = load_model(model_path)
-        logging.info('loading existing model successfully')
+        try:
+            logging.info('loading existing model successfully')
+            model = load_model(model_path)
+        except Exception as e:
+            logging.info('loading existing model unsuccessfully')
+            pass
+        logging.info('Training ....')
         model.fit(X_train,y_train)
+        logging.info('Training completed')
         predicted = model.predict(X_test)
         r2_new = r2_score(y_test, predicted)
         r2_best = read_metrics(metrics_path)

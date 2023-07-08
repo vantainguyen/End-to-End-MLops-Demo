@@ -116,3 +116,59 @@ ooo2023-07-08 18:12:38,531 - INFO - loading model successfully for stream infere
 2023-07-08 19:26:23,745 - WARNING -  * Debugger is active!
 2023-07-08 19:26:23,761 - INFO -  * Debugger PIN: 111-192-061
 2023-07-08 19:26:36,714 - INFO - 127.0.0.1 - - [08/Jul/2023 19:26:36] "GET /log HTTP/1.1" 200 -
+2023-07-08 19:31:39,099 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\test.py', reloading
+2023-07-08 19:31:39,719 - INFO -  * Restarting with stat
+2023-07-08 19:31:44,752 - INFO - loading model successfully for stream inference
+2023-07-08 19:31:44,765 - WARNING -  * Debugger is active!
+2023-07-08 19:31:44,771 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 19:31:47,747 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\test.py', reloading
+2023-07-08 19:31:48,159 - INFO -  * Restarting with stat
+2023-07-08 19:31:54,480 - INFO - loading model successfully for stream inference
+2023-07-08 19:31:54,516 - WARNING -  * Debugger is active!
+2023-07-08 19:31:54,538 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 19:32:14,703 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\test.py', reloading
+2023-07-08 19:32:15,313 - INFO -  * Restarting with stat
+2023-07-08 19:32:22,175 - INFO - loading model successfully for stream inference
+2023-07-08 19:32:22,209 - WARNING -  * Debugger is active!
+2023-07-08 19:32:22,221 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 19:33:11,186 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\test.py', reloading
+2023-07-08 19:33:11,389 - INFO -  * Restarting with stat
+2023-07-08 19:33:15,616 - INFO - loading model successfully for stream inference
+2023-07-08 19:33:15,642 - WARNING -  * Debugger is active!
+2023-07-08 19:33:15,661 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 19:33:27,910 - INFO - 127.0.0.1 - - [08/Jul/2023 19:33:27] "GET /log HTTP/1.1" 200 -
+2023-07-08 19:34:15,771 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\train.py', reloading
+2023-07-08 19:34:16,269 - INFO -  * Restarting with stat
+2023-07-08 19:34:19,658 - INFO - loading model successfully for stream inference
+2023-07-08 19:34:19,689 - WARNING -  * Debugger is active!
+2023-07-08 19:34:19,708 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 19:34:31,520 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\train.py', reloading
+2023-07-08 19:34:31,975 - INFO -  * Restarting with stat
+2023-07-08 19:34:36,355 - INFO - loading model successfully for stream inference
+2023-07-08 19:34:36,365 - WARNING -  * Debugger is active!
+2023-07-08 19:34:36,370 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 19:34:41,596 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\train.py', reloading
+2023-07-08 19:34:42,207 - INFO -  * Restarting with stat
+2023-07-08 19:34:49,626 - INFO - loading model successfully for stream inference
+2023-07-08 19:34:49,650 - WARNING -  * Debugger is active!
+2023-07-08 19:34:49,667 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 19:34:54,929 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\train.py', reloading
+2023-07-08 19:34:55,347 - INFO -  * Restarting with stat
+2023-07-08 19:35:02,161 - INFO - loading model successfully for stream inference
+2023-07-08 19:35:02,188 - WARNING -  * Debugger is active!
+2023-07-08 19:35:02,201 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 19:35:04,512 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\train.py', reloading
+2023-07-08 19:35:04,914 - INFO -  * Restarting with stat
+2023-07-08 19:35:11,119 - INFO - loading model successfully for stream inference
+2023-07-08 19:35:11,149 - WARNING -  * Debugger is active!
+2023-07-08 19:35:11,167 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 19:35:18,025 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\train.py', reloading
+2023-07-08 19:35:18,382 - INFO -  * Restarting with stat
+2023-07-08 19:35:24,196 - INFO - loading model successfully for stream inference
+2023-07-08 19:35:24,218 - WARNING -  * Debugger is active!
+2023-07-08 19:35:24,232 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 19:35:41,906 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\train.py', reloading
+2023-07-08 19:35:42,110 - INFO -  * Restarting with stat
+2023-07-08 19:35:46,850 - INFO - loading model successfully for stream inference
+2023-07-08 19:35:46,888 - WARNING -  * Debugger is active!
+2023-07-08 19:35:46,904 - INFO -  * Debugger PIN: 111-192-061
