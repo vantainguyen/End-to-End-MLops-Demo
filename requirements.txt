@@ -3,4 +3,4 @@ scikit-learn
 flask
 gunicorn
 requests
-pickle
+pickle5

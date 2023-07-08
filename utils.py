@@ -1,4 +1,4 @@
-import pickle 
+import pickle5 as pickle 
 
 
 def load_model(model_path):
