@@ -1,3 +1,6 @@
 numpy
-sklearn
-matplotlib
+scikit-learn
+flask
+gunicorn
+requests
+pickle

@@ -1,5 +1,8 @@
 import numpy as np
+import pickle
+from sklearn.metrics import r2_score
 from simple_linear_regr_utils import generate_data, evaluate
+
 
 
 class SimpleLinearRegression:
@@ -92,4 +95,17 @@ if __name__ == "__main__":
     model = SimpleLinearRegression()
     model.fit(X_train,y_train)
     predicted = model.predict(X_test)
+    r2_new = r2_score(y_test, predicted)
+    with open('metrics.txt', 'r') as file:
+        r2_best = float(file.readline())
+    if r2_new > r2_best:
+        # save model
+        with open('model.pkl', 'wb') as file:
+            pickle.dump(model, file)
+        print('New model is better. It has been saved')
+        with open('metrics.txt', 'w') as file:
+            file.write(str(r2_new))
+    else:
+        print('New model is not better. It was not saved')
+
     evaluate(model, X_test, y_test, predicted)
