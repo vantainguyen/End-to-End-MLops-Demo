@@ -15,6 +15,7 @@ logging.basicConfig(
     ]
 )
 
+# Path to save artifacts
 model_path = os.path.join('artifacts', 'model.pkl')
 metrics_path = os.path.join('artifacts', 'metrics.txt')
 
