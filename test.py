@@ -10,7 +10,7 @@ from simple_linear_regr_utils import generate_data
 # input_data = [[0.077], [0.068], [0.092]]
 input_data = 0.078
 # Send an HTTP POST request to the API endpoint
-response = requests.post('http://192.168.1.111:8080/stream', json={'data': input_data})
+response = requests.post('http://3.106.53.174:8080//stream', json={'data': input_data})
 # response = requests.post('http://3.106.53.174:8080/stream', json={'data': input_data})
 
 # response = requests.get('http://localhost:8080/log')
