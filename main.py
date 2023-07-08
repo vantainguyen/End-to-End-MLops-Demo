@@ -52,13 +52,13 @@ def inferenceBatch():
         logging.error(f'Exception: {e}')
     
     
-# @app.route('/log')
-# def log():
-#     file = open('app.log', 'r') 
-#     result = file.readlines()
-#     file.close()
-#     response = {'result': result}
-#     return jsonify(response)
+@app.route('/log')
+def log():
+    file = open('app.log', 'r') 
+    result = file.readlines()
+    file.close()
+    response = {'result': result}
+    return jsonify(response)
 
 if __name__ == '__main__':
 

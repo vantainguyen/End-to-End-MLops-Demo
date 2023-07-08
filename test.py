@@ -11,9 +11,9 @@ input_data = [[0.077], [0.068], [0.092]]
 # input_data = 0.078
 # Send an HTTP POST request to the API endpoint
 # response = requests.post('http://3.106.53.174:8080/log')
-response = requests.post('http://3.106.53.174:8080/stream', json={'data': input_data})
+# response = requests.post('http://3.106.53.174:8080/batch', json={'data': input_data})
 
-# response = requests.get('http://localhost:8080/log')
+response = requests.get('http://localhost:8080/log')
 
 # Retrieve the inference result from the response
 inference_result = response.json()['result']
