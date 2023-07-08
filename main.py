@@ -4,6 +4,7 @@ from flask import Flask, request, jsonify
 from simple_linear_regr import SimpleLinearRegression
 from utils import load_model
 
+
 # Configure logging to save messages to a file
 logging.basicConfig(
     level=logging.INFO,
