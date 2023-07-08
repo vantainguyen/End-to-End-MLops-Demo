@@ -19,13 +19,15 @@ logging.basicConfig(
 model_path = os.path.join('artifacts', 'model.pkl')
 metrics_path = os.path.join('artifacts', 'metrics.txt')
 
+app = Flask(__name__)
+
 try:
     model = SimpleLinearRegression()
     model = load_model(model_path)
     logging.info('loading model successfully for stream inference')
-    app = Flask(__name__)
 except Exception as e:
     logging.error(f'Exception: {e}')
+    pass
 
 @app.route('/stream', methods=['POST'])
 def inferenceStream():

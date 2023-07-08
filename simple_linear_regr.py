@@ -1,5 +1,5 @@
 import numpy as np
-import pickle5 as pickle
+import pickle #pickle5 as 
 from sklearn.metrics import r2_score
 from simple_linear_regr_utils import generate_data, evaluate
 

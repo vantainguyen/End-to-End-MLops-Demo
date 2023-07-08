@@ -1,0 +1,35 @@
+2023-07-08 17:53:29,873 - INFO - loading model successfully for stream inference
+2023-07-08 17:53:29,975 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.111:8080
+2023-07-08 17:53:29,976 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 17:53:29,991 - INFO -  * Restarting with stat
+2023-07-08 17:53:35,023 - INFO - loading model successfully for stream inference
+2023-07-08 17:53:35,073 - WARNING -  * Debugger is active!
+2023-07-08 17:53:35,105 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 17:53:43,537 - INFO - 192.168.1.111 - - [08/Jul/2023 17:53:43] "[33mGET / HTTP/1.1[0m" 404 -
+2023-07-08 17:53:43,833 - INFO - 192.168.1.111 - - [08/Jul/2023 17:53:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-07-08 17:54:02,599 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\test.py', reloading
+2023-07-08 17:54:02,869 - INFO -  * Restarting with stat
+2023-07-08 17:54:09,093 - INFO - loading model successfully for stream inference
+2023-07-08 17:54:09,122 - WARNING -  * Debugger is active!
+2023-07-08 17:54:09,146 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 17:54:14,744 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\test.py', reloading
+2023-07-08 17:54:15,038 - INFO -  * Restarting with stat
+2023-07-08 17:54:20,665 - INFO - loading model successfully for stream inference
+2023-07-08 17:54:20,695 - WARNING -  * Debugger is active!
+2023-07-08 17:54:20,716 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 17:55:07,310 - INFO - 127.0.0.1 - - [08/Jul/2023 17:55:07] "[33mGET / HTTP/1.1[0m" 404 -
+2023-07-08 17:55:07,472 - INFO - 127.0.0.1 - - [08/Jul/2023 17:55:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-07-08 17:55:15,378 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\test.py', reloading
+2023-07-08 17:55:15,582 - INFO -  * Restarting with stat
+2023-07-08 17:55:19,208 - INFO - loading model successfully for stream inference
+2023-07-08 17:55:19,233 - WARNING -  * Debugger is active!
+2023-07-08 17:55:19,251 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 17:55:25,189 - INFO - 192.168.1.111 - - [08/Jul/2023 17:55:25] "POST /stream HTTP/1.1" 200 -
+2023-07-08 17:55:38,009 - INFO - 192.168.1.111 - - [08/Jul/2023 17:55:38] "[31m[1mGET /stream HTTP/1.1[0m" 405 -
+2023-07-08 18:01:42,057 - INFO - 192.168.1.111 - - [08/Jul/2023 18:01:42] "POST /stream HTTP/1.1" 200 -
+2023-07-08 18:02:41,667 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\main.py', reloading
+2023-07-08 18:02:42,070 - INFO -  * Restarting with stat
+ooo
