@@ -172,3 +172,13 @@ ooo2023-07-08 18:12:38,531 - INFO - loading model successfully for stream infere
 2023-07-08 19:35:46,850 - INFO - loading model successfully for stream inference
 2023-07-08 19:35:46,888 - WARNING -  * Debugger is active!
 2023-07-08 19:35:46,904 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 19:36:42,202 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\test.py', reloading
+2023-07-08 19:36:42,495 - INFO -  * Restarting with stat
+2023-07-08 19:36:48,577 - INFO - loading model successfully for stream inference
+2023-07-08 19:36:48,599 - WARNING -  * Debugger is active!
+2023-07-08 19:36:48,619 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 19:36:53,572 - INFO -  * Detected change in 'D:\\NSW_teaching\\End-to-End-MLops-Demo\\test.py', reloading
+2023-07-08 19:36:53,936 - INFO -  * Restarting with stat
+2023-07-08 19:37:00,861 - INFO - loading model successfully for stream inference
+2023-07-08 19:37:00,891 - WARNING -  * Debugger is active!
+2023-07-08 19:37:00,913 - INFO -  * Debugger PIN: 111-192-061
