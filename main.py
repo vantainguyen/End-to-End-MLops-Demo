@@ -25,7 +25,6 @@ try:
 except Exception as e:
     logging.error(f'Exception: {e}')
 
-
 @app.route('/stream', methods=['POST'])
 def inferenceStream():
     try:
