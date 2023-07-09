@@ -21,7 +21,7 @@ The following functions need to be filled:
 -  `__sgd`: We will use the Stochastic Gradient Descent Algorithm to optimise the slope and the intercept of our linear function. There are many resources online about SGD, However
 the most important formulas are :
     
-![img.png](img.png)
+![MLOps_Architecture.png](MLOps_Architecture.png)
 
 Where `n`is the number of sample in the training dataset. 
 
