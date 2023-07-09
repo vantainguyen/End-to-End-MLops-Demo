@@ -1,7 +1,7 @@
 import requests
 
 
-demand = 'batch' # 'batch', 'stream'
+demand = 'log' # 'batch', 'stream', 'log'
 # Request invocation
 if demand == 'batch':
     input_data_batch = [[0.077], [0.068], [0.092]]
