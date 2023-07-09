@@ -182,3 +182,7 @@ ooo2023-07-08 18:12:38,531 - INFO - loading model successfully for stream infere
 2023-07-08 19:37:00,861 - INFO - loading model successfully for stream inference
 2023-07-08 19:37:00,891 - WARNING -  * Debugger is active!
 2023-07-08 19:37:00,913 - INFO -  * Debugger PIN: 111-192-061
+2023-07-08 20:55:07,899 - INFO - loading existing model successfully
+2023-07-08 20:55:08,193 - INFO - Training ....
+2023-07-08 20:56:48,139 - INFO - Training completed
+2023-07-08 20:56:48,152 - INFO - New model was not better. It was not saved. Old r2: 0.9000; new r2: 0.4723
