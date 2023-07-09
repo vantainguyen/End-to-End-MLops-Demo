@@ -51,7 +51,6 @@ def inferenceBatch():
     except Exception as e:
         logging.error(f'Exception: {e}')
     
-    
 @app.route('/log')
 def log():
     file = open('app.log', 'r') 
