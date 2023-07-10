@@ -1,6 +1,5 @@
 import requests
 
-
 demand = 'batch' # 'batch', 'stream', 'log'
 # Request invocation
 if demand == 'batch':
