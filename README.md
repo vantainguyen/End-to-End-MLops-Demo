@@ -14,7 +14,8 @@ A machine learning system has been built which includes following components and
     
 ![MLOps_Architecture.png](MLOps_Architecture.png)
 
-Notes: For a production ML system, S3 bucket to store model's artifacts, features and data should be applied. The MLOps pipeline can also been built in AWS Sagemaker with more advanced features and assistance.
+Notes: 1. For a production ML system, S3 bucket to store model's artifacts, features and data should be applied. The MLOps pipeline can also been built in AWS Sagemaker with more advanced features and assistance.
+2. To monitor the workflows, go to Actions on this repository.
 
 ## Implementation
 The script test.py can be utilised to do the inference and history logging.
