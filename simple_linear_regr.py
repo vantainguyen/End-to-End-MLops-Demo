@@ -48,12 +48,10 @@ class SimpleLinearRegression:
         """
         # Calculate dW & db.
         
-        dW = 0
+        dW = 0 
         db = 0
-        for i in range(len(X)):
-            dW -= 2/len(X)*X[i]*(y[i] - y_hat[i])
-            db -= 2/len(X)*(y[i] - y_hat[i])
-
+        dW -= 2/len(X) * np.dot(X.T, (y - y_hat))
+        db -= 2/len(X) * np.sum(y - y_hat)
         
         #  Update the self.W and self.b using the learning rate and the values for dW and db
         self.W = self.W - self.lr*dW
@@ -96,14 +94,14 @@ if __name__ == "__main__":
     model.fit(X_train,y_train)
     predicted = model.predict(X_test)
     r2_new = r2_score(y_test, predicted)
-    with open('metrics.txt', 'r') as file:
+    with open('./artifacts/metrics.txt', 'r') as file:
         r2_best = float(file.readline())
     if r2_new > r2_best:
         # save model
         with open('model.pkl', 'wb') as file:
             pickle.dump(model, file)
         print('New model is better. It has been saved')
-        with open('metrics.txt', 'w') as file:
+        with open('./artifacts/metrics.txt', 'w') as file:
             file.write(str(r2_new))
     else:
         print('New model is not better. It was not saved')
