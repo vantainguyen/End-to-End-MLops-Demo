@@ -59,6 +59,14 @@ def log():
     response = {'result': result}
     return jsonify(response)
 
+@app.route('/emptyLog')
+def emptyLog():
+    file = open('app.log', 'w') 
+    file.write('')
+    file.close()
+    response = {'result': 'log file emptied'}
+    return jsonify(response)
+
 if __name__ == '__main__':
 
     app.run('0.0.0.0', '8080', debug=True)
