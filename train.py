@@ -43,3 +43,6 @@ if __name__ == "__main__":
             logging.info(f'New model was not better. It was not saved. Old r2: {r2_best:.4f}; new r2: {r2_new:.4f}')
     except Exception as e:
         logging.error(f'Training process failed: {e}')
+
+
+        
