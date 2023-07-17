@@ -23,7 +23,7 @@ The script test.py can be utilised to do the inference and history logging.
 The API have three endpoints:
 - `POST /stream` : which takes a payload of one record and return the prediction for that record.
 - `POST /batch` : which takes an array of multiple records and return an array of predictions.
-- `GET /log` : which retrieve the log history of the system that can be used to monitor the system's performance.
+- `GET /log` : which retrieves the log history of the system that can be used to monitor the system's performance.
 - `GET /emptyLog` : which empties the log history of the system to free occupied storage by the log file.
 
 
