@@ -1,4 +1,4 @@
-# ML - Engineering Challenge Solved
+# End-to-End MLOps Demo
 
 ## Build a machine learning system
 
