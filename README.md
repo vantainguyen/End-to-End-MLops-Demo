@@ -9,7 +9,7 @@ A machine learning system has been built which includes following components and
 4. The docker image then will run on a EC2 instance server where the training of the model (train.py) occurs. The results of the training will be compared with those of the old model and if the new model is better it will replace the previous one.
 5. The model will be deployed to obtain endpoints which can be used by users to get inference.
 6. The data scientists/ ML engineers can use an endpoint to obtain the log of the system for a monitoring purpose.
-7. A Load balancer and auto scaling can be added to solve the traffic congestion (if I have time, I'll add these features since this is critical to have). Moreover, a monitoring system from AWS can be utilised as well.
+7. A Load balancer and auto scaling can be added to solve the traffic congestion (if more time allowed, adding these features since this is critical to have). Moreover, a monitoring system from AWS can be utilised as well.
 
     
 ![MLOps_Architecture.png](MLOps_Architecture.png)
